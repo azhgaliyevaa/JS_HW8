@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1146px;
+  margin: 0 auto;
+}
+
+header {
+  margin: 0 auto;
+  text-align: center;
+  padding: 40px 0;
+  background-color: rgb(255, 253, 128);
+}
+
+header h1 {
+  margin: 20px 0;
+  font-size: 30px;
+}
+
+header p {
+  margin-bottom: 15px;
+  font-size: 20px;
+}
+
+.button1 {
+  padding: 10px 20px;
+  border-radius: 50px;
+  border: 1px solid rgb(255, 170, 0);
+  font-size: 20px;
+  background-color: rgb(255, 170, 0);
+  color: white;
+  cursor: pointer;
+}
+
+main {
+  padding: 50px 0;
+  background-color: rgb(184, 162, 255);
+}
+
+main p {
+  font-size: 15px;
+}
+
+.modal {
+  padding: 20px 20px;
+  background-color: azure;
+  max-width: 500px;
+  position: fixed;
+  top: 50%;
+  right: 50%;
+  transform: scale(0);
+  z-index: 2;
+}
+
+.modal-close-icon {
+  width: 30px;
+  cursor: pointer;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+.modal-blackout {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  z-index: -1;
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.active {
+  transform: scale(1);
+}
